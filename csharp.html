@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bugless Code | C# Tutorial</title>
+  <link rel="stylesheet" href="csharp.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a class="logo-wrap" href="index.html">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>Bugless Code</span>
+      </a>
+      <nav class="nav-right">
+        <ul class="main-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="all_courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <div class="nav-auth">
+          <a class="sign-in-link" href="#">Sign In</a>
+          <a class="sign-up-btn" href="#">Sign Up</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="tutorial-main">
+    <section class="intro-card">
+      <h1>C# Tutorial</h1>
+      <p>C# is a modern, object-oriented language developed by Microsoft, running on the .NET framework.</p>
+    </section>
+
+    <section class="lesson-card">
+      <h2>Hello World</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Hello C#!");
+    }
+}</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Hello C#!</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card">
+      <h2>Variables</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>int age = 20;
+string name = "Ali";
+Console.WriteLine($"{name} is {age} years old.");</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Ali is 20 years old.</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card">
+      <h2>User Input</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>Console.Write("Enter your name: ");
+string input = Console.ReadLine();
+Console.WriteLine($"Welcome, {input}!");</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Enter your name: Ali
+Welcome, Ali!</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card">
+      <h2>Conditions</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>int x = 8;
+if (x &gt; 0)
+{
+    Console.WriteLine("Positive");
+}</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Positive</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card">
+      <h2>Loops (foreach and for)</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>string[] names = { "Ali", "Mona", "Sara" };
+foreach (string n in names)
+{
+    Console.WriteLine(n);
+}
+
+for (int i = 1; i &lt;= 3; i++)
+{
+    Console.WriteLine($"Round {i}");
+}</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Ali
+Mona
+Sara
+Round 1
+Round 2
+Round 3</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card oop-focus">
+      <h2>OOP: Classes &amp; Objects</h2>
+      <p class="note">C# OOP relies on classes, properties, and methods to model real-world entities cleanly.</p>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>class Car
+{
+    public string Brand { get; set; }
+    public int Year { get; set; }
+
+    public void ShowInfo()
+    {
+        Console.WriteLine($"{Brand} - {Year}");
+    }
+}
+
+Car myCar = new Car { Brand = "Toyota", Year = 2024 };
+myCar.ShowInfo();</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Toyota - 2024</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card oop-focus">
+      <h2>OOP: Inheritance</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Animal is eating");
+    }
+}
+
+class Dog : Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Dog is barking");
+    }
+}
+
+Dog d = new Dog();
+d.Eat();
+d.Bark();</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Animal is eating
+Dog is barking</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card oop-focus">
+      <h2>OOP: Encapsulation (get; set;)</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>class Student
+{
+    public string Name { get; set; }
+    public int Level { get; set; }
+}
+
+Student s = new Student();
+s.Name = "Lina";
+s.Level = 2;
+Console.WriteLine($"{s.Name} - Level {s.Level}");</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Lina - Level 2</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card">
+      <h2>Advanced: List&lt;T&gt;</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>using System.Collections.Generic;
+
+List&lt;int&gt; scores = new List&lt;int&gt; { 80, 95, 70 };
+scores.Add(88);
+Console.WriteLine(scores.Count);</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>4</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card">
+      <h2>Advanced: Interfaces</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>interface IPrinter
+{
+    void Print();
+}
+
+class Report : IPrinter
+{
+    public void Print()
+    {
+        Console.WriteLine("Printing report...");
+    }
+}</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>Printing report...</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card">
+      <h2>Advanced: LINQ Basics</h2>
+      <div class="example-split">
+        <div class="panel">
+          <p class="panel-label">Source Code</p>
+          <pre><code>using System.Linq;
+
+int[] nums = { 3, 7, 10, 2, 8 };
+var filtered = nums.Where(n =&gt; n &gt; 5);
+foreach (var n in filtered)
+{
+    Console.WriteLine(n);
+}</code></pre>
+        </div>
+        <div class="panel panel-output">
+          <p class="panel-label">Console Result</p>
+          <pre><code>7
+10
+8</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson-card resources">
+      <h2>Recommended YouTube Courses</h2>
+      <ul class="resource-list">
+        <li><a href="https://youtu.be/GhQdlIFylQ8" target="_blank" rel="noopener noreferrer">C# Full Course for Beginners</a></li>
+        <li><a href="https://youtu.be/jZF0x_xer8M?si=iaJepryhKFlglRJ7" target="_blank" rel="noopener noreferrer">C# OOP ITI</a></li>
+        
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

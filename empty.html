@@ -1,0 +1,332 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Tutorial - CodeLearn</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0d1117;
+      color: #c9d1d9;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #161b22;
+      padding: 12px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #30363d;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+    }
+
+    .logo-icon {
+      background-color: #e34c26;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: #c9d1d9;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover { color: white; }
+
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    aside {
+      width: 220px;
+      min-width: 220px;
+      background-color: #161b22;
+      padding: 20px 15px;
+      border-right: 1px solid #30363d;
+    }
+
+    aside h2 {
+      color: #f97316;
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+
+    aside h3 {
+      color: #fb923c;
+      font-size: 0.85rem;
+      margin: 15px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    aside a {
+      display: block;
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 0.88rem;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+
+    aside a:hover { background-color: #21262d; color: white; }
+    aside a.active { background-color: #21262d; color: white; }
+
+    main {
+      flex: 1;
+      padding: 30px;
+      max-width: 800px;
+    }
+
+    .card {
+      background-color: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 20px;
+      scroll-margin-top: 90px;
+    }
+
+    .card:target {
+      border-color: #f97316;
+      box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+    }
+
+    .card h2 {
+      color: #fb923c;
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #8b949e;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    pre {
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 15px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.88rem;
+      color: #fb923c;
+      overflow-x: auto;
+      margin-top: 10px;
+
+    }
+
+    .resource-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.resource-list a {
+  display: inline-block;
+  color: #b5e9ff;
+  padding: 10px 12px;
+  border: 1px solid rgba(196, 93, 10, 0.45);
+  border-radius: 10px;
+  transition: background 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+.resource-list a:hover {
+  background: rgb(240, 97, 15);
+  border-color: rgba(238, 92, 34, 0.75);
+  transform: translateY(-1px);
+}
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      <span class="logo-icon">&lt;/&gt;</span>
+      Bugless Code
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="all_courses.html">Courses</a>
+      <a href="about.html">About</a>
+    
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <aside>
+      <h2>HTML Tutorial</h2>
+
+      <h3>Basics</h3>
+      <a href="#html-home">HTML HOME</a>
+      <a href="#html-get-started">HTML Intro</a>
+      <a href="#html-get-started">HTML Get Started</a>
+      <a href="#">HTML Editors</a>
+      <a href="#">HTML Basic</a>
+      <a href="#">HTML Elements</a>
+      <a href="#">HTML Attributes</a>
+      <a href="#html-headings">HTML Headings</a>
+      <a href="#html-paragraphs">HTML Paragraphs</a>
+      <a href="#">HTML Styles</a>
+      <a href="#html-div-span">HTML Formatting</a>
+      <a href="#html-comments">HTML Comments</a>
+      <a href="#">HTML Colors</a>
+      <a href="#html-links">HTML Links</a>
+      <a href="#html-images">HTML Images</a>
+      <a href="#html-lists">HTML Lists</a>
+      <a href="#html-tables">HTML Tables</a>
+
+      <h3>Forms</h3>
+      <a href="#html-forms">HTML Forms</a>
+      <a href="#">HTML Input</a>
+      <a href="#">HTML Labels</a>
+      <a href="#">HTML Buttons</a>
+
+      <h3>Advanced</h3>
+      <a href="#">HTML Classes</a>
+      <a href="#">HTML ID</a>
+      <a href="#html-div-span">HTML Div</a>
+      <a href="#html-semantic">HTML Semantic</a>
+      <a href="#">HTML Head</a>
+      <a href="#">HTML Meta</a>
+    </aside>
+
+    <main>
+<div class="card" id="html-home">
+    <h2>HTML Tutorial</h2>
+    <p>Welcome to the Bugless Code HTML Tutorial. Learn HTML step by step with simple explanations and practical examples.</p>
+  </div>
+
+  <div class="card" id="html-intro">
+    <h2>HTML Intro</h2>
+    <p>HTML stands for HyperText Markup Language. It is the standard language used to create and structure content on the web.</p>
+  </div>
+
+  <div class="card" id="html-get-started">
+    <h2>HTML Get Started</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;Hello, HTML!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+  </div>
+
+  <div class="card" id="html-headings">
+    <h2>HTML Headings</h2>
+    <pre>
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;</pre>
+  </div>
+
+  <div class="card" id="html-paragraphs">
+    <h2>HTML Paragraphs</h2>
+    <pre>&lt;p&gt;This is a paragraph.&lt;/p&gt;</pre>
+  </div>
+
+  <div class="card" id="html-links">
+    <h2>HTML Links</h2>
+    <pre>&lt;a href="https://example.com"&gt;Click Here&lt;/a&gt;</pre>
+  </div>
+
+  <div class="card" id="html-images">
+    <h2>HTML Images</h2>
+    <pre>&lt;img src="photo.jpg" alt="My Photo" /&gt;</pre>
+  </div>
+
+  <div class="card" id="html-lists">
+    <h2>HTML Lists</h2>
+    <pre>
+&lt;ul&gt;
+&lt;li&gt;Item One&lt;/li&gt;
+&lt;li&gt;Item Two&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;First&lt;/li&gt;
+&lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;</pre>
+  </div>
+
+  <div class="card" id="html-tables">
+    <h2>HTML Tables</h2>
+    <pre>
+&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ali&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</pre>
+  </div>
+
+  <div class="card" id="html-forms">
+    <h2>HTML Forms</h2>
+    <pre>
+&lt;form&gt;
+&lt;input type="text" placeholder="Your name" /&gt;
+&lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;</pre>
+  </div>
+
+  <div class="card" id="html-comments">
+    <h2>HTML Comments</h2>
+    <pre>&lt;!-- This is a comment --&gt;</pre>
+  </div>
+
+  <div class="card" id="html-div-span">
+    <h2>HTML Div & Span</h2>
+    <pre>
+&lt;div&gt;Block element&lt;/div&gt;
+&lt;span&gt;Inline element&lt;/span&gt;</pre>
+  </div>
+
+  <div class="card" id="html-semantic">
+    <h2>HTML Semantic Tags</h2>
+    <pre>
+&lt;header&gt;Top of page&lt;/header&gt;
+&lt;nav&gt;Navigation&lt;/nav&gt;
+&lt;main&gt;Main content&lt;/main&gt;
+&lt;footer&gt;Bottom of page&lt;/footer&gt;</pre>
+  </div>
+  <section class="lesson-card resources">
+    <h2>Recommended YouTube Courses</h2>
+    <ul class="resource-list">
+      <li><a href="https://youtu.be/kUMe1FH4CHE?si=jt7ubPFoMs2fhJ1v" target="_blank" rel="noopener noreferrer">HTMLFull Course for Beginners</a></li>
+      <li><a href="https://youtu.be/6QAELgirvjs?si=2tn6o6Bakged1w4Q">HTML Arabic Course - Elzero Web School</a></li>
+    </ul>
+  </section>
+
+</main>
+</div>
+
+</body>
+</html>
