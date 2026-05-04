@@ -39,7 +39,7 @@
   border-bottom: 1px solid rgba(139, 92, 246, 0.24);
   position: sticky;
   top: 0;
-  z-index: 20;
+ 
 }
 
 .navbar-inner {
@@ -104,7 +104,6 @@
   padding: 9px 16px;
   border-radius: 10px;
   font-weight: 600;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .sign-up-btn:hover {
