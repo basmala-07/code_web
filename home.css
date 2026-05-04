@@ -94,8 +94,13 @@
   gap: 12px;
 }
 
-.sign-in-link:hover {
-  color: var(--purple-soft);
+.sign-in-link 
+{
+ background: linear-gradient(135deg, var(--purple), #6d5bff);
+  color: #fff;
+  padding: 9px 16px;
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .sign-up-btn {
