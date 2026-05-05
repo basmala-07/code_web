@@ -94,7 +94,7 @@
   gap: 12px;
 }
 
-.sign-in-link 
+.sign-in
 {
  background: linear-gradient(135deg, var(--purple), #6d5bff);
   color: #fff;
@@ -103,7 +103,7 @@
   font-weight: 600;
 }
 
-.sign-up-btn {
+.sign-up {
   background: linear-gradient(135deg, var(--purple), #6d5bff);
   color: #fff;
   padding: 9px 16px;
