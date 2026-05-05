@@ -172,8 +172,6 @@
   .courses-section {
     padding: 60px 0 80px;
   }
-
- 
   .dashboard {
     background: linear-gradient(180deg, rgba(12, 18, 38, 0.95), rgba(6, 11, 24, 0.98));
     border: 1px solid var(--line);
@@ -246,16 +244,6 @@
 
   .learn-link:hover {
     color: #a7b7ff;
-  }
-
-  @media (max-width: 930px) {
-    .courses-layout {
-      grid-template-columns: 1fr;
-    }
-
-    .section-sidebar {
-      position: static;
-    }
   }
 
   @media (max-width: 680px) {
