@@ -173,69 +173,7 @@
     padding: 60px 0 80px;
   }
 
-  .courses-layout {
-    display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: 28px;
-    align-items: start;
-  }
-
-  .section-sidebar {
-    position: sticky;
-    top: 94px;
-    background: linear-gradient(180deg, rgba(124, 77, 255, 0.16), rgba(11, 18, 38, 0.96));
-    border: 1px solid rgba(124, 77, 255, 0.3);
-    border-radius: 16px;
-    padding: 18px;
-    box-shadow: 0 16px 30px rgba(4, 9, 21, 0.5);
-  }
-
-  .section-sidebar h3 {
-    font-size: 0.95rem;
-    margin-bottom: 14px;
-    color: #d7c8ff;
-  }
-
-  .sidebar-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 0.95rem;
-  }
-
-  .sidebar-nav a,
-  .sidebar-nav details summary {
-    padding: 9px 11px;
-    border-radius: 10px;
-    color: #dbe6ff;
-    list-style: none;
-  }
-
-  .sidebar-nav a:hover,
-  .sidebar-nav details summary:hover {
-    background: rgba(124, 77, 255, 0.22);
-    color: #fff;
-  }
-
-  .sidebar-nav details[open] summary {
-    background: rgba(124, 77, 255, 0.2);
-    margin-bottom: 8px;
-  }
-
-  .tutorial-list {
-    margin-left: 10px;
-    border-left: 1px solid rgba(124, 77, 255, 0.35);
-    padding-left: 9px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  .tutorial-list a {
-    font-size: 0.9rem;
-    color: #b8c5eb;
-  }
-
+ 
   .dashboard {
     background: linear-gradient(180deg, rgba(12, 18, 38, 0.95), rgba(6, 11, 24, 0.98));
     border: 1px solid var(--line);
